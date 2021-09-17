@@ -1,4 +1,5 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
 interface WelcomeProps {
   name: string;
@@ -6,9 +7,9 @@ interface WelcomeProps {
 
 const Header: React.FunctionComponent<WelcomeProps> = (props) => {
   return (
-    <div>
+    <Container>
       <h1>Hello, {props.name}</h1>
-    </div>
+    </Container>
   );
 };
 
