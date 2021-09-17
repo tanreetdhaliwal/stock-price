@@ -1,12 +1,12 @@
 import Home from "./pages/Home";
-import { Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./styling/styles.css";
 
 function App() {
   return (
-    <Container className="App">
+    <div className="App">
       <Home />
-    </Container>
+    </div>
   );
 }
 

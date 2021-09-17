@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -7,7 +6,7 @@ import Header from "../components/Header";
 
 const Home: React.FunctionComponent = (props) => {
   return (
-    <Container>
+    <div className="cont">
       <Row>
         <Col lg={1}>
           <Header name="tanreet" />
@@ -19,7 +18,7 @@ const Home: React.FunctionComponent = (props) => {
           <Header name="tanreet" />
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 };
 
