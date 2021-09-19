@@ -20,6 +20,7 @@
   background-color: #21ce99;
   height: 8vh;
   margin: 0;
+  margin-bottom: 8px !important;
 }
 
 .search {
