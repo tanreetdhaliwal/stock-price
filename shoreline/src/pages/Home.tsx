@@ -2,7 +2,7 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/Navbar/Sidebar";
 import SearchStocksBar from "../components/SearchStocksBar";
 
 const Home: React.FunctionComponent = (props) => {

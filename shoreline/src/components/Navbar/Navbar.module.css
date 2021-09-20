@@ -1,0 +1,29 @@
+.logo {
+  background-color: #21ce99;
+  height: 8vh;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.img {
+  height: 60%;
+  width: 100%;
+  object-fit: contain;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.row {
+  margin-right: 0;
+}
+
+.label {
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 10%;
+  font-size: 1rem;
+}
+
+.active {
+  font-weight: bold;
+}
