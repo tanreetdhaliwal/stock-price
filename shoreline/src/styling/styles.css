@@ -1,44 +1,49 @@
 .cont {
   background-color: #ffffff;
   height: 100vh;
-  color: #ffffff;
   color: black;
 }
 
-.header {
-  background-color: #f4f7f9;
-  height: 100vh;
+.col {
   padding: 0;
 }
 
-.subtitle {
-  font-size: 16px;
-  justify-content: center;
+.col-sidebar {
+  height: 100vh;
+  background-color: #f4f7f9;
+  border-right: 1px solid #dee2e5;
 }
 
-.logo {
+.row-logo {
   background-color: #21ce99;
   height: 8vh;
   margin: 0;
-  margin-bottom: 8px !important;
-}
-
-.search {
-  background-color: #f4f7f9;
-  padding: 0;
-}
-
-.search-bar {
-  background-color: #dee2e5;
-  height: 8vh;
-}
-
-.headings {
-  margin: 2vh 3vw;
 }
 
 .img-logo {
   height: 5vh;
   width: auto;
-  margin: 1.2vh 7vw;
+}
+
+.row-heading {
+  margin-left: 3vw;
+}
+
+.col-search {
+  height: 100vh;
+  background-color: #f4f7f9;
+}
+
+.search-bar {
+  background-color: #dee2e5;
+  height: 8vh;
+  margin: 0;
+}
+
+.row-stock {
+  margin-left: 2vw;
+}
+
+.row-price {
+  padding-right: 3vw;
 }

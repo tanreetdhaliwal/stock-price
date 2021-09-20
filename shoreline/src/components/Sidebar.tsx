@@ -1,10 +1,6 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Headings from "../components/Headings";
-interface WelcomeProps {
-  name: string;
-}
+import Headings from "./Headings";
 
 const headings = [
   { id: 1, value: "My Stocks" },
@@ -15,10 +11,10 @@ const headings = [
   { id: 6, value: "Help Center" },
 ];
 
-const Header: React.FunctionComponent<WelcomeProps> = (props) => {
+const Sidebar: React.FunctionComponent = () => {
   return (
     <div>
-      <Row className="logo">
+      <Row className="row-logo mb-5 justify-content-md-center align-items-center">
         <img className="img-logo" src="profit.png"></img>
       </Row>
       <Headings headings={headings} />
@@ -26,4 +22,4 @@ const Header: React.FunctionComponent<WelcomeProps> = (props) => {
   );
 };
 
-export default Header;
+export default Sidebar;

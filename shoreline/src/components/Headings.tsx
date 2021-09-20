@@ -15,7 +15,11 @@ const Headings: React.FunctionComponent<HeadingProps> = (props) => {
   return (
     <div>
       {props.headings.map((heading) => {
-        return <Row className="headings">{heading.value}</Row>;
+        return (
+          <Row className="row-heading mb-4">
+            <div>{heading.value}</div>
+          </Row>
+        );
       })}
     </div>
   );

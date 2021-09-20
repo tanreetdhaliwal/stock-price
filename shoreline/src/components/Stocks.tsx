@@ -19,14 +19,22 @@ const Stocks: React.FunctionComponent<StockProps> = (props) => {
     <div>
       {props.stocks.map((stock) => {
         return (
-          <Row className="headings">
-            <Col>
-              <Row>{stock.ticker}</Row>
-              <Row>{stock.name}</Row>
+          <Row className="mb-4 mt-5">
+            <Col className="col">
+              <Row className="row-stock justify-content-md-start">
+                {stock.ticker}
+              </Row>
+              <Row className="row-stock justify-content-md-start">
+                {stock.name}
+              </Row>
             </Col>
             <Col>
-              <Row>{stock.value}</Row>
-              <Row>{stock.increase}</Row>
+              <Row className="row-price justify-content-md-end">
+                {stock.value}
+              </Row>
+              <Row className="row-price justify-content-md-end">
+                {stock.increase}
+              </Row>
             </Col>
           </Row>
         );
