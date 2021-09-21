@@ -1,34 +1,109 @@
 .cont {
-  background-color: #ffffff;
+  background-color: #f4f7f9;
   height: 100vh;
   color: black;
 }
 
-.col {
-  padding: 0;
+button {
+  border: none;
+  width: 100%;
+  padding: 15px;
 }
 
 .col-sidebar {
   height: 100vh;
   background-color: #f4f7f9;
   border-right: 1px solid #dee2e5;
+  padding: 0;
 }
 
 .col-search {
   height: 100vh;
   background-color: #f4f7f9;
+  border-right: 1px solid #dee2e5;
 }
 
 .search-bar {
   background-color: #dee2e5;
   height: 8vh;
-  margin: 0;
+  margin-right: -12px;
+  margin-left: -12px;
 }
 
-.row-stock {
-  margin-left: 2vw;
+input {
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
-.row-price {
-  padding-right: 3vw;
+.ticker {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.company {
+  color: rgb(94, 93, 93);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.stock {
+  background-color: white;
+  border-radius: 12px;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+  margin-top: 10px;
+}
+
+.rectangle {
+  background-color: #21ce99;
+  border-radius: 5px;
+  width: fit-content;
+  margin-right: 15px !important;
+  padding: 5px !important;
+}
+
+.red {
+  background-color: #c87171;
+  border-radius: 5px;
+  width: fit-content;
+  margin-right: 15px !important;
+  padding: 5px !important;
+}
+
+.value {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.increase {
+  font-size: 0.8rem;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul {
+  height: 92vh;
+}
+ul {
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-left: 0px !important;
+  padding-bottom: 10px;
+}
+
+.activestock {
+  background-color: #dee2e5;
+  border-radius: 12px;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+  margin-top: 10px;
 }

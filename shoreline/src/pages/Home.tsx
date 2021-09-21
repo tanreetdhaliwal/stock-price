@@ -9,7 +9,7 @@ const Home: React.FunctionComponent = (props) => {
   return (
     <div className="cont">
       <Row>
-        <Col className="col col-sidebar" lg={2}>
+        <Col className="col-sidebar" lg={2}>
           <Sidebar />
         </Col>
         <Col className="col col-search" lg={3}>
