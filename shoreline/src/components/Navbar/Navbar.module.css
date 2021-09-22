@@ -15,11 +15,11 @@
 
 .row {
   margin-right: 0;
+  width: 100%;
 }
 
 .label {
   padding-left: 25% !important;
-  padding-right: 25% !important;
   padding-bottom: 10%;
   font-size: 1rem;
 }

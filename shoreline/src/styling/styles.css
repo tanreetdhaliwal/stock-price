@@ -1,38 +1,74 @@
-.cont {
-  background-color: #f4f7f9;
-  height: 100vh;
+.cont-home {
+  background-color: #dee2e5;
   color: black;
-}
-
-button {
-  border: none;
-  width: 100%;
-  padding: 15px;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
 }
 
 .col-sidebar {
+  background-color: white;
+  padding: 0px;
   height: 100vh;
-  background-color: #f4f7f9;
-  border-right: 1px solid #dee2e5;
-  padding: 0;
 }
 
 .col-search {
   height: 100vh;
-  background-color: #f4f7f9;
-  border-right: 1px solid #dee2e5;
+}
+
+.row-no-padding {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 24px;
 }
 
 .search-bar {
   background-color: #dee2e5;
   height: 8vh;
-  margin-right: -12px;
-  margin-left: -12px;
 }
 
-input {
-  margin-left: 24px;
-  margin-right: 24px;
+form {
+  padding: 0px !important;
+}
+
+.row-search {
+  margin: 24px 12px;
+}
+
+.search-field {
+  width: 100%;
+  background-color: #c7c8c8;
+  padding: 10px;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.noSelect {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: n one;
+  user-select: none;
+}
+.noSelect:focus {
+  outline: none !important;
+}
+
+.stock {
+  background-color: white;
+  border-radius: 12px;
+  height: 20vh;
+  padding: 0px;
+  margin: 0px;
+}
+
+.search-button {
+  background-color: rgb(94, 93, 93);
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  color: white;
 }
 
 .ticker {
@@ -40,28 +76,21 @@ input {
   font-weight: bold;
   font-size: 1.1rem;
   padding-left: 15px;
-  padding-right: 15px;
 }
 
 .company {
   color: rgb(94, 93, 93);
   padding-left: 15px;
-  padding-right: 15px;
 }
 
-.stock {
-  background-color: white;
-  border-radius: 12px;
-  margin-right: 0px !important;
-  margin-left: 0px !important;
-  margin-top: 10px;
+.stocks {
+  padding-right: 24px;
 }
 
 .rectangle {
   background-color: #21ce99;
   border-radius: 5px;
   width: fit-content;
-  margin-right: 15px !important;
   padding: 5px !important;
 }
 
@@ -69,7 +98,6 @@ input {
   background-color: #c87171;
   border-radius: 5px;
   width: fit-content;
-  margin-right: 15px !important;
   padding: 5px !important;
 }
 
@@ -100,10 +128,6 @@ ul {
   padding-bottom: 10px;
 }
 
-.activestock {
-  background-color: #dee2e5;
-  border-radius: 12px;
-  margin-right: 0px !important;
-  margin-left: 0px !important;
-  margin-top: 10px;
+form {
+  display: flex;
 }
