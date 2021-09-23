@@ -59,8 +59,8 @@ form {
 .stock {
   background-color: white;
   border-radius: 12px;
-  height: 20vh;
-  padding: 0px;
+  height: fit-content;
+  padding: 20px;
   margin: 0px;
 }
 
@@ -130,4 +130,8 @@ ul {
 
 form {
   display: flex;
+}
+
+.graphRow {
+  margin: 0px 10vw;
 }
