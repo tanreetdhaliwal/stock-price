@@ -1,13 +1,21 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, Dispatch, SetStateAction } from "react";
 import PlotlyChart from "react-plotlyjs-ts";
 import Row from "react-bootstrap/Row";
+
+interface Stock {
+  ticker: string;
+  price: string;
+  increase: boolean;
+}
 interface DataProps {
   query: string;
   duration: string;
-  moveStock: any;
+  sendStockData: Dispatch<SetStateAction<any>>;
 }
 
 const Data = (props: DataProps) => {
+  const [stockData, setStockData] = useState({});
+
   const [x, setXValues] = useState([]);
   const [y, setYValues] = useState([]);
 
@@ -45,16 +53,16 @@ const Data = (props: DataProps) => {
         }
         setXValues(stockChartXValuesFunction);
         setYValues(stockChartYValuesFunction);
-        let stock: any = {
+        let stock: Stock = {
           ticker: props.query,
           price: stockChartYValuesFunction[0],
-          volume: volumes[0],
           increase:
             stockChartYValuesFunction[0] < stockChartYValuesFunction[1]
               ? false
               : true,
         };
-        props.moveStock(stock);
+        setStockData(stock);
+        props.sendStockData(stock);
       });
   }, [props.query, props.duration]);
 

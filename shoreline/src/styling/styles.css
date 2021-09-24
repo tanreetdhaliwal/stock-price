@@ -8,57 +8,10 @@
   margin: 24px 12px;
 }
 
-.stock {
-  background-color: white;
-  border-radius: 12px;
-  height: fit-content;
-  padding: 20px;
-  margin: 0px;
-}
-
-.ticker {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.1rem;
-  padding-left: 15px;
-}
-
-.company {
-  color: rgb(94, 93, 93);
-  padding-left: 15px;
-}
-
-.stocks {
-  padding-right: 24px;
-}
-
-.rectangle {
-  background-color: #21ce99;
-  border-radius: 5px;
-  width: fit-content;
-  padding: 5px !important;
-}
-
-.red {
-  background-color: #c87171;
-  border-radius: 5px;
-  width: fit-content;
-  padding: 5px !important;
-}
-
 .value {
   color: white;
   font-weight: bold;
   font-size: 1rem;
   text-align: center;
-}
-
-.increase {
-  font-size: 0.8rem;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.graphRow {
-  margin: 0px 10vw;
+  padding: 10px;
 }

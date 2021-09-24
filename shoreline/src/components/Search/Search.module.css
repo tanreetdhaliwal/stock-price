@@ -32,3 +32,42 @@
 form {
   display: flex;
 }
+.stock {
+  background-color: white;
+  height: 2vh;
+  border-radius: 12px;
+  padding: 10px;
+  margin-top: 2vw !important;
+  margin-left: 12px !important;
+  width: 15vw !important;
+  height: 8vh;
+}
+
+.label {
+  text-transform: uppercase;
+  font-weight: bold !important;
+  font-size: 1.1rem;
+  padding: 15px;
+}
+
+.value {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.positive {
+  background-color: #21ce99;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 5px !important;
+}
+
+.negative {
+  background-color: #c87171;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 5px !important;
+}

@@ -7,7 +7,6 @@ interface Heading {
   text: string;
   active: boolean;
 }
-
 interface HeadingProps {
   headingLabels: Heading[];
 }

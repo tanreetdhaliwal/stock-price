@@ -1,17 +1,18 @@
-import { useState, Dispatch, SetStateAction } from "react";
+import { useState } from "react";
 import Searchbar from "./Searchbar";
-import Stock from "./Stock";
 import Row from "react-bootstrap/Row";
 import Data from "./Data";
+import Stock from "./Stock";
 
 const SearchContainer = () => {
   const [query, setQuery] = useState("");
   const [duration, setDuration] = useState("");
-  const [data, setData] = useState();
+  const [stockData, sendStockData] = useState();
   return (
     <Row className="row-search">
       <Searchbar setDuration={setDuration} setQuery={setQuery} />
-      <Data moveStock={setData} duration={duration} query={query} />
+      <Stock stockData={stockData} />
+      <Data sendStockData={sendStockData} duration={duration} query={query} />
     </Row>
   );
 };
