@@ -13,11 +13,6 @@
   padding-right: 0 !important;
 }
 
-.row {
-  margin-right: 0;
-  width: 100%;
-}
-
 .label {
   padding-left: 25% !important;
   padding-bottom: 10%;
@@ -26,4 +21,10 @@
 
 .active {
   font-weight: bold;
+}
+
+.rows {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 12px;
 }

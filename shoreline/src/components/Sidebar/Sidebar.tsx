@@ -1,10 +1,17 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Headings from "./Headings";
-import Heading from "../../models/heading";
-import styles from "./Navbar.module.css";
+import styles from "./Sidebar.module.css";
 
-const headings: Heading[] = [
+interface Heading {
+  id: string;
+  text: string;
+  active: boolean;
+}
+
+interface Headings extends Array<Heading> {}
+
+const headings: Headings = [
   { id: "1", text: "My Stocks", active: true },
   { id: "2", text: "Buy Stocks", active: false },
   { id: "3", text: "Pending Orders", active: false },
@@ -13,7 +20,7 @@ const headings: Heading[] = [
   { id: "6", text: "Help Center", active: false },
 ];
 
-const Sidebar: React.FC = () => {
+const Sidebar = () => {
   return (
     <React.Fragment>
       <Row
@@ -21,7 +28,7 @@ const Sidebar: React.FC = () => {
       >
         <img className={styles.img} src="profit.png"></img>
       </Row>
-      <Headings items={headings} />
+      <Headings headingLabels={headings} />
     </React.Fragment>
   );
 };

@@ -1,17 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import PlotlyChart from "react-plotlyjs-ts";
 import Row from "react-bootstrap/Row";
-
 interface DataProps {
   query: string;
+  duration: string;
   moveStock: any;
-}
-
-interface Stock {
-  ticker: string;
-  price: any;
-  volume: string;
-  increase: boolean;
 }
 
 const Data = (props: DataProps) => {
@@ -38,7 +31,7 @@ const Data = (props: DataProps) => {
         }
         setXValues(stockChartXValuesFunction);
         setYValues(stockChartYValuesFunction);
-        let stock: Stock = {
+        let stock: any = {
           ticker: props.query,
           price: stockChartYValuesFunction[0],
           volume: volumes[0],
@@ -52,7 +45,7 @@ const Data = (props: DataProps) => {
   }, [props.query]);
 
   return (
-    <Row className="graphRow justify-content-md-center">
+    <Row className="justify-content-md-center">
       <PlotlyChart
         data={[
           {
@@ -64,8 +57,8 @@ const Data = (props: DataProps) => {
           },
         ]}
         layout={{
-          width: 1100,
-          height: 700,
+          width: 700,
+          height: 300,
           plot_bgcolor: "#dee2e5",
           paper_bgcolor: "#dee2e5",
         }}
@@ -75,6 +68,3 @@ const Data = (props: DataProps) => {
 };
 
 export default Data;
-function obj(obj: any) {
-  throw new Error("Function not implemented.");
-}

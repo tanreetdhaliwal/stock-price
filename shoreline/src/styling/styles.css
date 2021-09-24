@@ -1,59 +1,11 @@
-.cont-home {
-  background-color: #dee2e5;
-  color: black;
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-}
-
-.col-sidebar {
-  background-color: white;
-  padding: 0px;
-  height: 100vh;
-}
-
-.col-search {
-  height: 100vh;
-}
-
 .row-no-padding {
   margin: 0px;
   padding: 0px;
   margin-bottom: 24px;
 }
 
-.search-bar {
-  background-color: #dee2e5;
-  height: 8vh;
-}
-
-form {
-  padding: 0px !important;
-}
-
 .row-search {
   margin: 24px 12px;
-}
-
-.search-field {
-  width: 100%;
-  background-color: #c7c8c8;
-  padding: 10px;
-  border: none;
-  border-radius: 10px 0px 0px 10px;
-}
-
-.noSelect {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: n one;
-  user-select: none;
-}
-.noSelect:focus {
-  outline: none !important;
 }
 
 .stock {
@@ -62,13 +14,6 @@ form {
   height: fit-content;
   padding: 20px;
   margin: 0px;
-}
-
-.search-button {
-  background-color: rgb(94, 93, 93);
-  border: none;
-  border-radius: 0px 10px 10px 0px;
-  color: white;
 }
 
 .ticker {
@@ -112,24 +57,6 @@ form {
   font-size: 0.8rem;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-ul {
-  list-style-type: none;
-}
-
-ul {
-  height: 92vh;
-}
-ul {
-  overflow: hidden;
-  overflow-y: scroll;
-  padding-left: 0px !important;
-  padding-bottom: 10px;
-}
-
-form {
-  display: flex;
 }
 
 .graphRow {

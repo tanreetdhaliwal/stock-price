@@ -1,0 +1,23 @@
+.cont {
+  background-color: #dee2e5;
+  color: black;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+.leftCol {
+  background-color: white;
+  padding: 0px !important;
+  height: 100vh;
+}
+
+.rightCol {
+  height: 100vh;
+}
+
+.rows {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 24px;
+}

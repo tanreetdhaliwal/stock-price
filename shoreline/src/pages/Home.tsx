@@ -1,19 +1,19 @@
-import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import styles from "./Home.module.css";
 
-import Sidebar from "../components/Navbar/Sidebar";
+import Sidebar from "../components/Sidebar/Sidebar";
 import SearchContainer from "../components/Search/SearchContainer";
 
-const Home: React.FunctionComponent = () => {
+const Home = () => {
   return (
-    <Container fluid className="cont-home">
-      <Row className="row-no-padding">
-        <Col className="col-sidebar" lg={2}>
+    <Container fluid className={styles.cont}>
+      <Row className={styles.rows}>
+        <Col className={styles.leftCol} lg={2}>
           <Sidebar />
         </Col>
-        <Col className="col-search" lg={10}>
+        <Col className={styles.rightCol} lg={10}>
           <SearchContainer />
         </Col>
       </Row>
