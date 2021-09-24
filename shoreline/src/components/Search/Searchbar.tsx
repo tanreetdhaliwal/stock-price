@@ -1,4 +1,4 @@
-import { useState, Dispatch, SetStateAction } from "react";
+import React, { useState, Dispatch, SetStateAction } from "react";
 import Row from "react-bootstrap/Row";
 import styles from "./Search.module.css";
 interface SearchProps {
@@ -10,14 +10,14 @@ const Searchbar = (props: SearchProps) => {
   const [query, setQuery] = useState("");
   const [duration, setDuration] = useState("Daily");
 
-  const handleQueryChange = (e: any) => {
-    setQuery(e.target.value);
+  const handleQueryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setQuery(e.currentTarget.value);
   };
 
-  const handleDurationChange = (e: any) => {
-    setDuration(e.target.value);
+  const handleDurationChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setDuration(e.currentTarget.value);
   };
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     props.setQuery(query);
     props.setDuration(duration);

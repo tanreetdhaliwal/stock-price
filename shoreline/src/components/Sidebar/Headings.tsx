@@ -20,6 +20,7 @@ const Headings = ({ headingLabels }: HeadingProps) => {
           <Row className={styles.rows}>
             <div
               className={`${styles.label} ${heading.active && styles.active}`}
+              id={heading.id}
             >
               {heading.text}
             </div>

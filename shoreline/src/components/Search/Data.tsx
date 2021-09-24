@@ -13,21 +13,35 @@ const Data = (props: DataProps) => {
 
   useEffect(() => {
     const API_KEY = "7JAII2Q8BLNVCEXT";
-    let API_Call = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${props.query}&outputsize=compact&apikey=${API_KEY}`;
+    let dataTitle = "Time Series (Daily)";
+    switch (props.duration) {
+      case "Daily":
+        dataTitle = "Time Series (Daily)";
+        break;
+      case "Weekly":
+        dataTitle = "Weekly Adjusted Time Series";
+        break;
+      case "Monthly":
+        dataTitle = "Monthly Adjusted Time Series";
+        break;
+      default:
+        dataTitle = "Time Series (Daily)";
+    }
+    let duration = props.duration.toUpperCase();
+    let query = props.query.toUpperCase();
+    let API_Call = `https://www.alphavantage.co/query?function=TIME_SERIES_${duration}_ADJUSTED&symbol=${query}&outputsize=compact&apikey=${API_KEY}`;
     let stockChartXValuesFunction: any = [];
     let stockChartYValuesFunction: any = [];
     let volumes: any = [];
-
     fetch(API_Call)
       .then(function (response) {
         return response.json();
       })
       .then(function (data) {
-        for (var key in data["Time Series (Daily)"]) {
+        console.log(dataTitle);
+        for (var key in data[dataTitle]) {
           stockChartXValuesFunction.push(key);
-          stockChartYValuesFunction.push(
-            data["Time Series (Daily)"][key]["1. open"]
-          );
+          stockChartYValuesFunction.push(data[dataTitle][key]["1. open"]);
         }
         setXValues(stockChartXValuesFunction);
         setYValues(stockChartYValuesFunction);
@@ -42,7 +56,7 @@ const Data = (props: DataProps) => {
         };
         props.moveStock(stock);
       });
-  }, [props.query]);
+  }, [props.query, props.duration]);
 
   return (
     <Row className="justify-content-md-center">
@@ -57,8 +71,7 @@ const Data = (props: DataProps) => {
           },
         ]}
         layout={{
-          width: 700,
-          height: 300,
+          autosize: true,
           plot_bgcolor: "#dee2e5",
           paper_bgcolor: "#dee2e5",
         }}

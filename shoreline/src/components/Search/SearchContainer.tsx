@@ -8,7 +8,6 @@ const SearchContainer = () => {
   const [query, setQuery] = useState("");
   const [duration, setDuration] = useState("");
   const [data, setData] = useState();
-
   return (
     <Row className="row-search">
       <Searchbar setDuration={setDuration} setQuery={setQuery} />

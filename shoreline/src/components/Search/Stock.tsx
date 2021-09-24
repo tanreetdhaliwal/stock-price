@@ -2,7 +2,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const Stock = (props: any) => {
-  console.log(props);
   return (
     <Row className="stock">
       <Col>
