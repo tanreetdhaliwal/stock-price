@@ -18,7 +18,8 @@ const Data = (props: DataProps) => {
 
   const [x, setXValues] = useState([]);
   const [y, setYValues] = useState([]);
-
+  let duration = props.duration.toUpperCase();
+  let query = props.query.toUpperCase();
   useEffect(() => {
     const API_KEY = "7JAII2Q8BLNVCEXT";
     let dataTitle = "Time Series (Daily)";
@@ -35,12 +36,9 @@ const Data = (props: DataProps) => {
       default:
         dataTitle = "Time Series (Daily)";
     }
-    let duration = props.duration.toUpperCase();
-    let query = props.query.toUpperCase();
     let API_Call = `https://www.alphavantage.co/query?function=TIME_SERIES_${duration}_ADJUSTED&symbol=${query}&outputsize=compact&apikey=${API_KEY}`;
     let stockChartXValuesFunction: any = [];
     let stockChartYValuesFunction: any = [];
-    let volumes: any = [];
     fetch(API_Call)
       .then(function (response) {
         return response.json();

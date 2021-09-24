@@ -7,7 +7,7 @@ interface SearchProps {
 }
 
 const Searchbar = (props: SearchProps) => {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState("IBM");
   const [duration, setDuration] = useState("Daily");
 
   const handleQueryChange = (e: React.ChangeEvent<HTMLInputElement>) => {

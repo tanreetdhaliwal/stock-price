@@ -3,8 +3,7 @@ import Col from "react-bootstrap/Col";
 import styles from "./Search.module.css";
 
 const Stock = (props: any) => {
-  console.log(props);
-  if (props.stockData.price == undefined) {
+  if (props.stockData == undefined) {
     return <Row className={styles.stock}></Row>;
   } else {
     return (
